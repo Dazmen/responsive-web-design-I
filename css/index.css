@@ -86,6 +86,9 @@ nav a:hover{
 .topContent h2{
 	padding-bottom: 15px;
 }
+.middle-img{
+    max-width: 100%;
+}
 .bottomContent{
 	display: flex;
 	justify-content: space-between;
@@ -108,12 +111,19 @@ nav a:hover{
 /* SERVICES PAGE */
 .serviceHeaderImg {
 	display: flex;
-	justify-content: center;
-	margin:35px 0;
+    justify-content: center;
+    margin:35px 0;
+    max-width: 100%;
+    border:1px solid grey;
+}
+.serviceHeaderImg img{
+    display:block;
+    max-width: 100%;
 }
 .service{
-	height:150px;
-	border-bottom: 2px solid black;
+	/* height:150px; */
+    border-bottom: 2px solid black;
+    padding-bottom: 5%;
 }
 .service h1{
 	margin: 25px 0;
@@ -142,14 +152,19 @@ nav a:hover{
 	align-items: center;
 	border-color: 2px solid black;
 }
-.learnMoreButton:hover{
+.learnMoreButton a{
+    display:block;
+	text-decoration: none;
+    color:black;
+	height: 100%;
+	width: 100%;
+	background-color: white;
+	text-align: center;
+}
+.learnMoreButton a:hover{
 	color:white;
 	background-color:darkgrey;
 	border-color: 2px solid white;
-}
-.learnMoreButton a{
-	text-decoration: none;
-	color:black;
 }
 .learnMoreButton a:hover{
 	color:white;
@@ -167,14 +182,20 @@ nav a:hover{
 .mainContentBot{
 	display:flex;
 	justify-content: space-between;
-	margin:40px 0;
+    margin:40px 0;
+    border-bottom: 2px solid black;
 } 
 /* CLOSING CONTENTS */
 .closingThoughts {
-	display: flex;
+    display: flex;
+    justify-content: space-between;
+    margin:40px 0;
+}
+.closingThoughts img{
+    width:48%;
 }
 .someFactsBox{
-	width:45%;
+	width:48%;
 	margin: 15px;
 }
 .someFactsBox h3{
@@ -271,5 +292,43 @@ nav a:hover{
     }
     .bottomContent .box:last-child{
         padding-top: 5%;
+    }
+    .serviceHeaderImg img{
+        max-width: 100%;
+        
+    }
+    .serviceBox{
+        width: 90%;
+        margin:3% 0;
+    }
+    .mainContentTop{
+        flex-direction: column;
+        align-items: center;
+        margin:3% 0 0 0;
+        }
+    .mainContentMid{
+        flex-direction: column;
+        align-items: center;
+        margin:0;
+    }
+    .mainContentBot{
+        flex-direction: column;
+        align-items: center;
+        padding: 0 0 5% 0;
+        margin:0;
+    }
+    .closingThoughts{
+        flex-direction: column;
+        align-items: center;
+    }
+    .closingThoughts img{
+        width:90%;
+    }
+    .someFactsBox{
+        width:90%
+    }
+    .service{
+        height: 100%;
+        padding-bottom: 7%;
     }
 }
