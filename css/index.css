@@ -1,3 +1,334 @@
-/* Use your own code or past solution for Great Idea Web Page CSS here! */
+*{
+	box-sizing: border-box;
+	margin: 0;
+	padding:0;
+}
+.container{
+	max-width: 80%;
+	margin: 0 auto;
+	padding-bottom: 30px;
+}
 
+nav{
+	display:flex;
+	justify-content: space-between;
+	align-items: center;
+	padding-top:30px;
+    max-width: 90%;
+    margin:0 auto;
+}
+.links {
+    width: 80%;
+    display:flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.logo{
+    width:20%;
+}
+nav a {
+	text-decoration: none;
+	color: grey;
+}
+nav a:hover{
+	color: blue;
+}
+/* IF THINGS BREAK IT IS BETWEEN HERE AND SERVICES */
+.header{
+	display:flex;
+	justify-content: space-evenly;
+	align-items: center;
+	max-width: 100%;
+	margin: 75px 0;
+}
+.headerText{
+	text-align: center;
+	max-width: 48%;
+}
+.middle-img {
+    display:flex;
+    justify-content: center;
 
+}
+.button{
+	width: 150px;
+	height:35px;
+	border:2px solid black;
+    margin:0 auto;
+    margin-top: 20px;   
+}
+.button a{
+    display: block;
+    height:100%;
+    width:100%;
+    text-decoration: none;
+    color: black;
+    padding-top:5px;
+}
+.button a:hover{
+	color:white;
+	background-color:black;
+	border:2px solid grey;
+}
+.headerText h1 {
+	font-size:70px;
+}
+.topContent .box{
+    margin:0 2.3%;
+}
+.topContent {
+	display: flex;
+	justify-content: space-between;
+	margin: 45px 0;
+	border-top: 2px solid black;
+	padding-top: 45px;
+}
+.topContent h2{
+	padding-bottom: 15px;
+}
+.middle-img{
+    max-width: 100%;
+}
+.bottomContent{
+	display: flex;
+	justify-content: space-between;
+	margin: 45px 0;
+	border-bottom: 2px solid black;
+	padding-bottom: 45px;
+}
+.bottomContent .box{
+	margin:0 3%;
+}
+.bottomContent h2{
+	padding-bottom: 15px;
+}
+.contact h2{
+	margin: 25px 0;
+}
+.contact .number{
+	margin: 20px 0;
+}
+/* SERVICES PAGE */
+.serviceHeaderImg {
+	display: flex;
+    justify-content: center;
+    margin:35px 0;
+    max-width: 100%;
+    border:1px solid grey;
+}
+.serviceHeaderImg img{
+    display:block;
+    max-width: 100%;
+}
+.service{
+	/* height:150px; */
+    border-bottom: 2px solid black;
+    padding-bottom: 5%;
+}
+.service h1{
+	margin: 25px 0;
+}
+/* MAIN SERVICE CONTENT STARTS HEAR */
+.serviceBox{
+	width: 48%;
+	border: 2px solid black;
+	padding:15px;
+	background-color: lightgray;
+}
+.serviceBox p{
+	margin: 10px 0;
+}
+.serviceBox h2{
+	margin-bottom: 25px;
+}
+.learnMoreButton{ /*NEEDS WORK */
+	margin: 7px;
+	height: 30px;
+	width: 40%;
+	background-color: white;
+	text-align: center;
+	display:flex;
+	justify-content: center;
+	align-items: center;
+	border-color: 2px solid black;
+}
+.learnMoreButton a{
+    display:block;
+	text-decoration: none;
+    color:black;
+	height: 100%;
+	width: 100%;
+	background-color: white;
+	text-align: center;
+}
+.learnMoreButton a:hover{
+	color:white;
+	background-color:darkgrey;
+	border-color: 2px solid white;
+}
+.learnMoreButton a:hover{
+	color:white;
+}
+.mainContentTop{
+	display:flex;
+	justify-content: space-between;
+	margin:40px 0;
+}
+.mainContentMid{
+	display:flex;
+	justify-content: space-between;
+	margin:40px 0;
+}
+.mainContentBot{
+	display:flex;
+	justify-content: space-between;
+    margin:40px 0;
+    border-bottom: 2px solid black;
+} 
+/* CLOSING CONTENTS */
+.closingThoughts {
+    display: flex;
+    justify-content: space-between;
+    margin:40px 0;
+}
+.closingThoughts img{
+    width:48%;
+}
+.someFactsBox{
+	width:48%;
+	margin: 15px;
+}
+.someFactsBox h3{
+	margin-bottom: 25px;
+	font-size: 25px;
+}
+.someFactsBox p{
+	margin:10px o;
+}
+.someFactsList {
+	margin-left: 20px;
+	margin-top: 20px;
+	line-height: 1.9;
+}
+.serviceFooter {
+	margin-top: 50px;
+	display: flex;
+	justify-content: center;
+}
+/* 800px MEDIA BREAK STARTS HERE */
+@media (max-width: 800px){
+    .container{
+        max-width: 95%;
+    }
+    
+    header img{
+        display: none ;
+    }
+    .headerText{
+        max-width: 100%;
+    }
+    nav{
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+    .links{
+        width:100%;
+        justify-content: space-between;
+    }
+    .logo{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 5%;
+    }
+    .middle-img img{
+        max-width: 100%;
+    }
+}
+/* 800PX MEDIA BREAK ENDS HERE */
+/* 500PX MEDIA BREAK STARTS HERE */
+@media (max-width: 500px){
+    nav{
+        flex-direction: column-reverse;
+        align-items: center;
+        max-width: 100%;
+        padding-top:0px;
+    }
+    .links{
+        flex-direction: column;
+    }
+    .links a{
+        display:block;
+        border-top: 1px solid grey;
+        /* border-bottom: 1px solid grey; */
+        width:100%;
+        text-align: center;
+        padding:2% 0;
+    }
+    .links a:hover{
+        background-color: lightgrey;
+        color:black;
+    }
+    .links a:last-child{
+        border-bottom: 1px solid grey;
+    }
+    .logo{
+        padding-top: 4%;
+    }
+    .headerText{
+        max-width: 100%;
+    }
+    .topContent{
+        flex-direction:column;
+    }
+    .bottomContent{
+        flex-direction:column;
+    }
+    .topContent .box:first-child{
+        padding-bottom: 5%;
+    }
+    .bottomContent .box:first-child{
+        padding-bottom: 5%;
+    }
+    .bottomContent .box:last-child{
+        padding-top: 5%;
+    }
+    .serviceHeaderImg img{
+        max-width: 100%;
+        
+    }
+    .serviceBox{
+        width: 90%;
+        margin:3% 0;
+    }
+    .mainContentTop{
+        flex-direction: column;
+        align-items: center;
+        margin:3% 0 0 0;
+        }
+    .mainContentMid{
+        flex-direction: column;
+        align-items: center;
+        margin:0;
+    }
+    .mainContentBot{
+        flex-direction: column;
+        align-items: center;
+        padding: 0 0 5% 0;
+        margin:0;
+    }
+    .closingThoughts{
+        flex-direction: column;
+        align-items: center;
+    }
+    .closingThoughts img{
+        width:90%;
+    }
+    .someFactsBox{
+        width:90%
+    }
+    .service{
+        height: 100%;
+        padding-bottom: 7%;
+    }
+}
